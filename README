@@ -1,0 +1,17 @@
+# Mach-II PatternViewLoader Experiment
+
+The purpose of this experiment is to determine if `MachII.framework.viewLoaders.PatternViewLoader` works with Lucee application mappings, or if it needs to be patched with that support.
+
+## Setup
+* Run `box package install` to fetch Mach-II
+* Create a directory `/tmp/external-views`
+* Make a view file at `/tmp/external-views/info.cfm`
+* Create a directory `/tmp/external-views/foo`
+* Make a view file at `/tmp/external-views/foo/bar.cfm`
+
+## Experimenting
+* Run `box server start` to launch a Lucee 5.3 instance
+* View /index.cfm?event=showHome
+* View /index.cfm?event=showInfo
+* Uncomment the PatternViewLoader section in the Mach-II XML
+* Experience exception

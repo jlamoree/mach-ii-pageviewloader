@@ -1,0 +1,20 @@
+{
+    "dependencies":{
+        "mach-ii-1.9":"https://devops-lamoree-com.s3.amazonaws.com/x/mach-ii-1.9.zip"
+    },
+    "devDependencies":{},
+    "ignore":[
+        "**/.*",
+        "/test/",
+        "/tests/"
+    ],
+    "installPaths":{
+        "mach-ii-1.9":"MachII/"
+    },
+    "name":"Mach-II PatternViewLoader Experiment",
+    "private":true,
+    "scripts":{},
+    "slug":"mach-ii-patternviewloader",
+    "type":"modules",
+    "version":"0.0.0"
+}
